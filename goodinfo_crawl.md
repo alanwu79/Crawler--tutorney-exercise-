@@ -1,6 +1,6 @@
 # 爬goodinfo網站每間公司基本資料存進SQLite資料庫
 
-想把Table的資料變成字典，藍底自當Key，白底當Value，存
+想把Table的資料變成字典，藍底自當Key，白底當Value
 ![](https://i.imgur.com/SSxucv2.png)
 
 
@@ -34,7 +34,7 @@ class SQLite:
         self.connect.close()
 ```
 還有BUG 
-
+抓兩個List，用ZIP結合成字典 
 ```python
 class Crawl:
     def __init__(self,url):
